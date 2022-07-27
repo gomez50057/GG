@@ -9,14 +9,18 @@
         html {
             scroll-behavior: smooth;
         }
+
+
+
         /* *********************/
         /* seccion I N I C I O */
         /* *********************/
 
         
+        
         body {
             background: #1B1A17;
-            color: #fff;
+            color: #343a40;
         }
 
         #inicio {
@@ -165,9 +169,7 @@
         }
         
         #sobremi .contenedor-foto img {
-            padding: 20px;
             width: 100%;
-            border-radius: 20px;
             background-color: #343434;
         }
         
@@ -175,14 +177,12 @@
             margin: 0 40px;
         }
         
-        #sobremi .sobremi .titulo-seccion {
+        #sobremi .sobremi .titulo-seccion  {
             font-size: 22px;
             text-transform: uppercase;
             color: #fff;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
         }
+        
         
         #sobremi .sobremi h2 {
             font-size: 34px;
@@ -215,7 +215,7 @@
             text-decoration: none;
             color: #fff;
             border-radius: 30px;
-            border: 1px solid #000;
+            border: 1px solid #E7BD70;
             padding: 10px 20px;
             margin-top: 30px;
             transition: .5s;
@@ -225,6 +225,70 @@
             background-color: #E7BD70;
             color: #fff;
         }
+
+        .carreaux_presentation_light {
+            display: table-cell;
+            
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+        }
+        .carreaux_presentation_light .shadow_swhow_mini {
+            background-color: rgba(19, 30, 33, 0.4);
+            position: absolute;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .carreaux_presentation_light:hover .shadow_swhow_mini {
+            background-color: rgba(16, 23, 41, 0);
+        }
+        .carreaux_presentation_light .deroul_titre {
+            position: absolute;
+            text-transform: uppercase;
+            font-family: "Roboto";
+            padding: 7px;
+            z-index: 1000;
+            top: 60%;
+            left: -80%;
+            color: #ffffff;
+            font-weight: 300;
+            font-size: 13px;
+            width: 80%;
+            -webkit-transition: all 0.7s;
+            -moz-transition: all 0.7s;
+            -ms-transition: all 0.7s;
+            transition: all 0.7s;
+        }
+        .carreaux_presentation_light:hover .deroul_titre {
+            background-color: #1e4944;
+            left: 0px;
+        }
+        .carreaux_presentation_light .deroul_soustitre {
+            position: absolute;
+            font-family: "Roboto";
+            padding: 5px;
+            z-index: 1000;
+            top: 60%;
+            right: -85%;
+            margin-top: 25px;
+            color: #ffffff;
+            font-weight: 300;
+            font-size: 11px;
+            width: 80%;
+            -webkit-transition: all 0.7s;
+            -moz-transition: all 0.7s;
+            -ms-transition: all 0.7s;
+            transition: all 0.7s;
+        }
+        .carreaux_presentation_light:hover .deroul_soustitre {
+            background-color: #4C8492;
+            right: 0px;
+        }
+  
+
         /* *********************/
         /* seccion S E R V I C I O S */
         /* *********************/
@@ -240,9 +304,6 @@
             font-size: 22px;
             text-transform: uppercase;
             color: #fff;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
         }
         
         #servicios .fila {
@@ -298,6 +359,9 @@
             font-size: 14px;
             line-height: 22px;
         }
+
+
+        
         /* *********************/
         /* seccion S K I L L S */
         /* *********************/
@@ -416,9 +480,6 @@
             font-size: 22px;
             text-transform: uppercase;
             color: #fff;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
         }
         
         #portfolio .fila {
@@ -448,22 +509,87 @@
             filter: grayscale(0);
         }
         
-        #portfolio .fila .proyecto .info {
-            position: absolute;
-            left: 0px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #E7BD70;
-            width: 100%;
-            padding: 10px;
-            opacity: 0;
-            bottom: -40px;
-            transition: .5s;
+        .portfolio .member {
+            text-align: center;
+            background: #343a40;
+            position: relative;
+            overflow: hidden;
+        }
+          
+        .portfolio .member .member-info {
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: 0.2s;
         }
         
-        #portfolio .fila .proyecto:hover .info {
-            opacity: 1;
-            bottom: 0;
+        .portfolio .member .member-info-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        transition: bottom 0.4s;
         }
+        
+        .portfolio .member .member-info-content  {
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+        }
+        
+        .portfolio .member .member-info-content span {
+        font-style: italic;
+        display: block;
+        font-size: 13px;
+        color: #fff;
+        }
+        
+        .portfolio .member .social {
+        position: absolute;
+        left: 0;
+        bottom: -38px;
+        right: 0;
+        height: 48px;
+        transition: bottom ease-in-out 0.4s;
+        text-align: center;
+        }
+        
+        .portfolio .member .social a {
+        transition: color 0.3s;
+        color: #fff;
+        display: inline-block;
+        }
+        
+        .portfolio .member .social a:hover {
+        color: #cda45e;
+        }
+        
+        .portfolio .member .social{
+        font-size: 18px;
+        margin: 0 2px;
+        }
+        
+        .portfolio .member:hover .member-info {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+        opacity: 1;
+        transition: 0.4s;
+        }
+        
+        .portfolio .member:hover .member-info-content {
+        bottom: 60px;
+        transition: bottom 0.4s;
+        }
+        
+        .portfolio .member:hover .social {
+        bottom: 0;
+        transition: bottom ease-in-out 0.4s;
+        }
+
+
+
         /* *********************/
         /* seccion C O N T A C T O */
         /* *********************/
@@ -512,9 +638,6 @@
             font-size: 22px;
             text-transform: uppercase;
             color: #fff;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
         }
         
         #contacto .btn-enviar {
