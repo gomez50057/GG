@@ -10,12 +10,9 @@
             scroll-behavior: smooth;
         }
 
-
-
         /* *********************/
         /* seccion I N I C I O */
         /* *********************/
-
         
         
         body {
@@ -297,6 +294,7 @@
             padding: 100px 15px;
             text-align: center;
             background-color: #343434;
+            color: #fff;
         }
         
         #servicios .titulo-seccion {
@@ -315,7 +313,7 @@
         
         #servicios .fila .servicio {
             max-width: 350px;
-            background-color: #fff;
+            background-color: #A6CFD5;
             padding: 30px;
             margin: 0 5px;
             border-radius: 5px;
@@ -323,7 +321,7 @@
         }
         
         #servicios .fila .servicio:hover {
-            box-shadow: 5px 5px 10px #FCFAF1, -5px -5px 10px #8a8a8a;
+            box-shadow: 5px 5px 10px #E7BD70, -5px -5px 10px #c29f5e;
         }
         
         #servicios .fila .servicio .icono {
@@ -331,7 +329,7 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background-color: #d3d3d3;
+            background-color: #343434;
             padding: 20px;
             margin-bottom: 25px;
         }
@@ -395,7 +393,7 @@
             content: "";
             display: block;
             position: absolute;
-            background: #343434;
+            background: #A6CFD5;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -479,7 +477,7 @@
         /* *********************/
         
         .contenedor-skills {
-            background: linear-gradient( #e2c298, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            background: linear-gradient( #C78283, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
