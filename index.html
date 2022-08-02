@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-
-
     <title>Portafolio de Gabriel</title>
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Favicons -->
     <link href="img/favicon.png" rel="icon">
+    <!-- Js  -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
-
-
-  
 </head>
 
 <body>
@@ -75,7 +76,11 @@
         
         
         <div class="sobremi">
-            <p class="titulo-seccion">Sobre Mi</p>
+          <!-- <div class="titulo-seccion">
+              <h2>Mis servicios</h2>
+              <p>Echanos un vistaso</p>
+          </div> -->
+            <p>Sobre Mi</p>
             <h2>Hola, Soy <span>Gabriel Gómez G</span> </h2>
             <h3>Programador</h3>      
             <p>Soy un graduado de CBTIs 222 con conocimiento en depuración, diseño y prueba de software. Soy un gran jugador de equipo capaz de aprender y aplicar nuevas tecnologías rápidamente. Actualmente soy estudiante de la universidad politécnica de Pachuca.</p>
@@ -87,7 +92,10 @@
 
     <!-- SECCION S E R V I C I O S -->
     <section id="servicios">
-        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+      <div class="titulo-seccion">
+        <h2>Mis servicios</h2>
+        <p>Echanos un vistaso</p>
+      </div>
 
         <div class="fila">
             <div class="servicio">
@@ -164,7 +172,11 @@
      <!-- SECCION H E R R A M I E N T A S -->
 
     <div class="herramientas"> 
-      <h3>MIS herramientas </h3><br>
+        <div class="titulo-seccion">
+          <h2>Mis herramientas</h2>
+          <p>Echanos un vistaso</p>
+        </div>
+      
       <a class="box">
         <p id="tooltiptxt">JavaScript</p>
         <svg xmlns="http://www.w3.org/2000/svg" class="box__image" x="0px" y="0px" 
@@ -277,54 +289,22 @@
     
     
 
-    <!-- SECCION H A B I L I D A D E S -->
-    <div class="contenedor-skills" id="skills">
-        <h3>HABILIDADES </h3>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Html & Css</p>
-                <span class="porcentaje">85%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="html"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Javascript</p>
-                <span class="porcentaje">70%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="js"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Solidworks</p>
-                <span class="porcentaje">70%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="bd"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Adobe XD</p>
-                <span class="porcentaje">85%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="ps"></div>
-            </div>
-        </div>
+    <!-- SECCION B A N N E R -->
+    <div class="contenedor-baner">
+      <div class="titulo-seccion">
+        <h2>tecnología</h2>
+        
+      </div>
+        
+        
     </div>
 
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio" class="portfolio">
-        <h3 class="titulo-seccion">Mis Proyectos</h3>
+      <div class="titulo-seccion">
+        <h2>Mis Proyectos</h2>
+        <p>Echanos un vistaso</p>
+      </div>
 
         <div class="fila"> 
             <div class="proyecto">
@@ -431,8 +411,12 @@
 
     <!-- SECCTION C O N T A C T O -->
     <section id="contacto">
-        <h3 class="titulo-seccion">Contactanos ahora</h3>
+       <!-- <h3 class="titulo-seccion">Contactanos ahora</h3>-->
         <div class="contenedor-form">
+          <div class="titulo-seccion">
+            <h2>Contacto</h2>
+            <p>Echanos un vistaso</p>
+          </div>
             <form action="">
                 <div class="fila mitad">
                     <input type="text" placeholder="Nombre Completo *" class="input-mitad">
@@ -458,8 +442,13 @@
             <a href="https://github.com/gomez50057" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/gomez50057/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
-
     </footer>
+
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
