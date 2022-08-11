@@ -347,7 +347,7 @@
         
         #servicios .fila .servicio {
             max-width: 350px;
-            background-color:  rgba(200, 132, 133, 0.795);
+            background-color:  #EF959D;
             padding: 30px;
             margin: 0 5px;
             border-radius: 5px;
@@ -431,7 +431,7 @@
             content: "";
             display: block;
             position: absolute;
-            background:  rgba(200, 132, 133, 0.548);
+            background:  #EF959D;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
