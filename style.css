@@ -347,10 +347,10 @@
         
         #servicios .fila .servicio {
             max-width: 350px;
-            background-color:  #EF959D;
+            background-color:  #1B1A17;
             padding: 30px;
             margin: 0 5px;
-            border-radius: 5px;
+            border-radius: 10px;
             transition: .5s;
         }
         
@@ -412,6 +412,7 @@
 
         .box {
             cursor: pointer;
+            border-radius: 50%;
             display: inline-block;
             width: 110px;
             position: relative;
@@ -420,7 +421,8 @@
             z-index: 0;
             transition: all 0.3s ease;
             opacity: 1;
-            margin-right: -1px;
+            margin-right: 7px;
+            margin-top: 7px;
         }
 
         .box:hover {
@@ -431,6 +433,7 @@
             content: "";
             display: block;
             position: absolute;
+            border-radius: 50%;
             background:  #EF959D;
             top: 50%;
             left: 50%;
@@ -467,7 +470,7 @@
         }
 
         .box__image {
-            fill: #000;
+            fill: #1B1A17;
             width: 60%;
             will-change: width;
             position: absolute;
@@ -571,7 +574,7 @@
         
         .portfolio .member {
             text-align: center;
-            background: #343a40;
+            background: #E7BD70;
             position: relative;
             overflow: hidden;
         }
