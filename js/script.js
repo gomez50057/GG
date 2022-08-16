@@ -19,9 +19,6 @@ function responsiveMenu() {
     }
 }
 
-//detecto el scrolling para aplicar la animación del la barra de habilidades
-window.onscroll = function() { efectoHabilidades() };
-
 //Boton que sube 
 window.onscroll = function(){
     console.log(document.documentElement.scrollTop);
