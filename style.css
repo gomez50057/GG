@@ -26,6 +26,8 @@
             background-position: center center;
             height: 100vh;
         }
+
+        
         
         .logo img {
             max-height: 40px;
@@ -80,7 +82,7 @@
         }
         
         #inicio .contenido header .contenido-header .redes a:hover {
-            color: #E7BD70;
+            color: #E7bd70;
         }
         
         #inicio .contenido header .contenido-header .seleccionado {
@@ -324,8 +326,10 @@
         
         #servicios {
             padding: 100px 15px;
+            background: linear-gradient( rgba(0, 0, 0, 0.856), rgba(231, 189, 112, 0.5)), url("img/gg.jpg");
+            background-size: cover;
+            background-position: center center;
             text-align: center;
-            background-color: #343434;
             color: #F9F8F0;
         }
         
@@ -345,11 +349,14 @@
         
         #servicios .fila .servicio {
             max-width: 350px;
-            background-color:  #1B1A17;
+            background-color: rgba(0, 0, 0, 0.1)  ;
+           /*background-color:  #1B1A17;*/
             padding: 30px;
             margin: 0 5px;
-            border-radius: 10px;
+            border-radius: 30px;
             transition: .5s;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
         }
         
         #servicios .fila .servicio:hover {
@@ -515,6 +522,15 @@
         /* seccion B A N N E R */
         /* *********************/
         
+        canvas {
+            width: 100%;
+            height: 100%;
+            outline: none;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+          }
+
         .contenedor-baner {
             background: linear-gradient( #C78283, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
             background-attachment: fixed;
@@ -551,7 +567,7 @@
         
         #portfolio .fila .proyecto {
             max-width: 450px;
-            border: 1px solid #000;
+            border: 1px  ;
             margin: 0 10px;
             position: relative;
             overflow: hidden;
@@ -560,7 +576,6 @@
         #portfolio .fila .proyecto img {
             width: 100%;
             height: 100%;
-            ;
             filter: grayscale(1);
             object-fit: cover;
             transition: .5s;
@@ -572,9 +587,10 @@
         
         .portfolio .member {
             text-align: center;
-            background: #E7BD70;
             position: relative;
             overflow: hidden;
+            border-radius: 10px;
+
         }
           
         .portfolio .member .member-info {
