@@ -526,7 +526,7 @@
         /* *********************/
         
         .contenedor-baner {
-            background: linear-gradient( #C78283, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            background: linear-gradient( #C78283, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.svg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
