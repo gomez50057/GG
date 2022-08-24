@@ -9,6 +9,8 @@ function seleccionar(link) {
     link.className = "seleccionado";
 }
 
+
+
 //función que muestra el menu responsive
 function responsiveMenu() {
     var x = document.getElementById("nav");
@@ -18,6 +20,12 @@ function responsiveMenu() {
         x.className = "";
     }
 }
+
+
+
+
+
+
 
 //Boton que sube 
 window.onscroll = function(){
