@@ -542,7 +542,7 @@
         
         #portfolio {
             max-width: 1100px;
-            padding: 100px 0;
+            padding: 80px 0;
             margin: auto;
         }
         
@@ -660,49 +660,21 @@
         }
 
 
-
         /* *********************/
         /* seccion C O N T A C T O */
         /* *********************/
-        
+
         #contacto {
-            padding: 100px 15px;
+            padding: 50px 0px;
+            margin-top: -10px;
             background-color: #343434;
+            max-width: 100%;  
+            margin: auto;
         }
         
         #contacto .titulo-seccion {
             margin-bottom: 20px;
-        }
-        
-        #contacto .contenedor-form {
-            max-width: 1100px;
-            margin: auto;
-        }
-        
-        #contacto .contenedor-form .fila {
-            margin-bottom: 15px;
-        }
-        
-        #contacto .contenedor-form .mitad {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        #contacto .contenedor-form input,
-        #contacto .contenedor-form textarea {
-            padding: 20px;
-            border-radius: 20px;
-            border: none;
-            border: 1px solid #919191;
-        }
-        
-        #contacto .contenedor-form .mitad input {
-            width: 48%;
-        }
-        
-        #contacto .contenedor-form .input-full {
-            width: 100%;
-        }
+        }  
         
         #contacto .titulo-seccion {
             text-align: center;
@@ -710,19 +682,54 @@
             text-transform: uppercase;
             color: #F9F8F0;
         }
-        
-        #contacto .btn-enviar {
-            display: block;
-            margin: auto;
-            cursor: pointer;
-            transition: .5s;
-            padding: 10px 15px !important;
+
+        .cen-sm{
+            text-align: center;
         }
-        
-        #contacto .btn-enviar:hover {
-            background-color: #E7BD70;
-            color: #F9F8F0;
+
+        .sm a{ 
+            display: inline-block;
+            font-size: 60px;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            color: #EF959D;
+            margin: 0 16px;
+            transition: 0.4s linear;
+            position: relative;
+            cursor: pointer;     
         }
+
+        .sm a::before, .sm a::after{
+            content: '';
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: 0.4s linear;
+        }
+
+        .sm a:hover{
+            transform: scale(0.8);
+        } 
+
+        .sm a:hover::before{
+            border-left: 4px solid;
+            border-right: 4px solid;
+            transform: skewX(20deg);
+        }
+
+        .sm a:hover::after{
+            border-top: 4px solid;
+            border-bottom: 4px solid;
+            transform: skewY(-20deg);
+        }
+
+
+       
 
 
 
@@ -914,15 +921,15 @@
                 margin: 10px auto;
             }
             /* seccion CONTACTO */
-            #contacto {
+           /* #contacto {
                 padding: 50px 15px;
             }
-            #contacto .contenedor-form .mitad {
+            #contacto  {
                 margin-bottom: 15px;
                 display: block;
             }
-            #contacto .contenedor-form .mitad input {
+            #contacto   {
                 width: 100%;
                 margin-bottom: 15px;
-            }
+            }*/
         }
