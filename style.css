@@ -701,7 +701,6 @@
 
         }
         
-
         .icons a .layer{
             width: 110px;
             height: 110px;
@@ -736,7 +735,7 @@
             align-items: center;
             justify-content: center;
         }
-        .fa-envelope{
+        .fa-envelope{/*Correo no respta la el tamaño compartido, por eso un estilo particular para el correo*/
             font-size: 60px;
             display: flex;
             align-items: center;
@@ -776,6 +775,26 @@
         .icons a:hover .text{
             bottom: -35px;
             opacity: 1;
+        }
+
+        @media (max-width: 990px) {
+            .icons a .layer span.fab{
+                padding-top: 0;
+            }
+        }
+        
+        @media (max-width: 760px) {
+            .icons a .text{
+                bottom: -5px;
+                opacity: 1;
+            }
+        }
+        
+        @media (max-width: 450px) {
+            .icons a{
+                margin: 2rem 2rem;
+            }
+            
         }
 
 
@@ -967,15 +986,13 @@
                 margin: 10px auto;
             }
             /* seccion CONTACTO */
-           /* #contacto {
+            #contacto {
                 padding: 50px 15px;
-            }
-            #contacto  {
-                margin-bottom: 15px;
-                display: block;
             }
             #contacto   {
                 width: 100%;
-                margin-bottom: 15px;
-            }*/
+            }
+
+
         }
+
