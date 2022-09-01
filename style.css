@@ -30,7 +30,7 @@
         
         
         .logo img {
-            max-height: 40px;
+            max-height: 45px;
             width: auto;
         }
 
@@ -185,6 +185,9 @@
             color: #F9F8F0;
             display: none;
         }
+
+        
+
         /* *********************/
         /* seccion S O B R E  M I */
         /* *********************/
@@ -418,7 +421,6 @@
         }
 
         .box {
-            cursor: pointer;
             border-radius: 50%;
             display: inline-block;
             width: 110px;

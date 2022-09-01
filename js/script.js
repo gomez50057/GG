@@ -11,7 +11,7 @@ function seleccionar(link) {
 
 
 
-//función que muestra el menu responsive
+//función que muestra el menu responsive y cierra 
 function responsiveMenu() {
     var x = document.getElementById("nav");
     if (x.className === "") {
@@ -21,10 +21,60 @@ function responsiveMenu() {
     }
 }
 
+//función que cierra depues de seleccionar
+function seleccionar() {
+  var x = document.getElementById("nav");
+    if (x.className === "") {
+        x.className = "responsive";
+    } else {
+        x.className = "";
+    }
+}
+
+const menu = document.getElementById('nav');
+const secciones = document.querySelectorAll('.seccion');
+
+const observer = new IntersectionObserver((entradas, observer) => {
+	entradas.forEach(entrada => {
+		if(entrada.isIntersecting){
+			// Obtenemos cual es la seccion que esta entrando en pantalla.
+      console.log(entrada.target)
+			// console.log(`La entrada ${entrada.target.id} esta intersectando`);
+
+			// Creamos un arreglo con las secciones y luego obtenemos el index del la seccion que esta en pantalla.
+			//indexSeccionActiva = [...secciones].indexOf(entrada.target);
+			//indicador.style.transform = `translateX(${tamañoIndicador * indexSeccionActiva}px)`;
+		}
+	});
+}, {
+	rootMargin: '-45px 0px 0px 0px',
+	threshold: 0.3
+});
+
+secciones.forEach(seccion => observer.observe(seccion));
 
 
+/*
+// Agregamos un observador para el hero.
+observer.observe(document.getElementById('hero'));
 
+// Asignamos un observador a cada una de las secciones
+secciones.forEach(seccion => observer.observe(seccion));
 
+// Evento para cuando la pantalla cambie de tamaño.
+const onResize = () => {
+	// Calculamos el nuevo tamaño que deberia tener el indicador.
+	tamañoIndicador = menu.querySelector('a').offsetWidth;
+
+	// Cambiamos el tamaño del indicador.
+	indicador.style.width = `${tamañoIndicador}px`;
+
+	// Volvemos a posicionar el indicador.
+	indicador.style.transform = `translateX(${tamañoIndicador * indexSeccionActiva}px)`;
+}
+
+window.addEventListener('resize', onResize);
+*/
 
 
 //Boton que sube 

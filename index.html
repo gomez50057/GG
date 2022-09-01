@@ -21,9 +21,9 @@
 
 </head>
 
-<body>
+<body class="secciones">
     <!-- SECCION I N I C I O -->
-    <section id="inicio">
+    <section class="seccion" id="inicio">
         <div class="contenido">
             <header>
                 <div class="contenido-header">
@@ -35,6 +35,7 @@
                             <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                            <span class="indicador" id="indicador"></span>
                         </ul>
                     </nav>
                     
@@ -63,23 +64,23 @@
     </section>
 
     <!-- SECCION S O B R E M I -->
-    <section id="sobremi" class="wow animate__animated animate__fadeInUp animate__delay-1s" >
+    <section id="sobremi" class="seccion wow animate__animated animate__fadeInUp animate__delay-1s" >
      
 
 
       <div class="contenedor-foto">
-        
+        <img src="img/foto.jpg" alt="Gabriel Gomez Desarrollador">
 
 
 
-        <div class="carreaux_presentation_light">
-                <img src="img/foto.jpg" alt="Gabriel Gomez Desarrollador">
-                <div class="shadow_swhow_mini">
-                    <div class="deroul_titre"> Gabriel Gomez G </div>
-                    <div class="deroul_soustitre">Gomez50057</div>
-                </div>
+        <!--<div class="carreaux_presentation_light">
+            <img src="img/foto.jpg" alt="Gabriel Gomez Desarrollador">
+            <div class="shadow_swhow_mini">
+                <div class="deroul_titre"> Gabriel Gomez G </div>
+                <div class="deroul_soustitre">Gomez50057</div>
             </div>
-        </div>
+        </div>-->
+      </div>
         
         
         <div class="sobremi">
@@ -95,7 +96,7 @@
     </section>
 
     <!-- SECCION S E R V I C I O S -->
-    <section id="servicios">
+    <section class="seccion" id="servicios">
       <div class="titulo-seccion">
         <h2>Mis servicios</h2>
         <p>Echanos un vistaso</p>
@@ -276,7 +277,7 @@
     </div>
 
     <!-- SECCION PORTAFOLIO -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio seccion">
       <div class="titulo-seccion">
         <h2>Mis Proyectos</h2>
         <p>Echanos un vistaso</p>
@@ -290,7 +291,7 @@
                 <div class="member-info">
                   <div class="member-info-content">
                     <h4>Copo de nieve</h4>
-                    <span>HTML│JS│CSS</span>
+                    <span>HTML│JS│CSS│Bootstrap</span>
                   </div>
                   <div class="social">      
                     <a href="https://gomez50057.github.io/LaunchX-FrontEnd-Reposteria" target="_blank" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-eye"></i></a>      
@@ -386,7 +387,7 @@
     </section>
 
     <!-- SECCTION C O N T A C T O -->
-    <section id="contacto">
+    <section class="seccion" id="contacto">
          <div class="titulo-seccion">
            <h2>Contacto</h2>
            <p>Echanos un vistaso</p>
