@@ -30,33 +30,35 @@ function seleccionar() {
         x.className = "";
     }
 }
-
+/*
 const menu = document.getElementById('nav');
+const indicador = document.getElementById('indicador');
 const secciones = document.querySelectorAll('.seccion');
 
+let tamañoIndicador = menu.querySelector('a').offsetWidth;
+indicador.style.width = tamañoIndicador + 'px';
+
+
+let indexSeccionActiva;
+
+// Observer
 const observer = new IntersectionObserver((entradas, observer) => {
 	entradas.forEach(entrada => {
 		if(entrada.isIntersecting){
 			// Obtenemos cual es la seccion que esta entrando en pantalla.
-      console.log(entrada.target)
 			// console.log(`La entrada ${entrada.target.id} esta intersectando`);
 
 			// Creamos un arreglo con las secciones y luego obtenemos el index del la seccion que esta en pantalla.
-			//indexSeccionActiva = [...secciones].indexOf(entrada.target);
-			//indicador.style.transform = `translateX(${tamañoIndicador * indexSeccionActiva}px)`;
+			indexSeccionActiva = [...secciones].indexOf(entrada.target);
+			indicador.style.transform = `translateX(${tamañoIndicador * indexSeccionActiva}px)`;
 		}
 	});
 }, {
 	rootMargin: '-45px 0px 0px 0px',
-	threshold: 0.3
+	threshold: 0.2
 });
 
-secciones.forEach(seccion => observer.observe(seccion));
 
-
-/*
-// Agregamos un observador para el hero.
-observer.observe(document.getElementById('hero'));
 
 // Asignamos un observador a cada una de las secciones
 secciones.forEach(seccion => observer.observe(seccion));
@@ -75,7 +77,6 @@ const onResize = () => {
 
 window.addEventListener('resize', onResize);
 */
-
 
 //Boton que sube 
 window.onscroll = function(){

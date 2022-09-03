@@ -332,7 +332,7 @@
         
         #servicios {
             padding: 100px 15px;
-            background: linear-gradient( rgba(0, 0, 0, 0.856), rgba(231, 189, 112, 0.3)), url("img/gg.jpg");
+            background: linear-gradient( rgba(0, 0, 0, 0.856), rgba(231, 189, 112, 0.3)), url("img/G.svg");
             background-size: cover;
             background-position: center center;
             text-align: center;
@@ -791,7 +791,7 @@
             }
         }
         
-        @media (max-width: 450px) {
+        @media (max-width: 670px) {
             .icons a{
                 margin: 2rem 2rem;
             }
