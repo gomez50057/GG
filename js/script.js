@@ -9,9 +9,7 @@ function seleccionar(link) {
     link.className = "seleccionado";
 }
 
-
-
-//función que muestra el menu responsive y cierra 
+//Función que muestra el menu responsive y cierra 
 function responsiveMenu() {
     var x = document.getElementById("nav");
     if (x.className === "") {
@@ -21,7 +19,7 @@ function responsiveMenu() {
     }
 }
 
-//función que cierra depues de seleccionar
+//Función que cierra depues de seleccionar
 function seleccionar() {
   var x = document.getElementById("nav");
     if (x.className === "") {
@@ -30,53 +28,38 @@ function seleccionar() {
         x.className = "";
     }
 }
-/*
-const menu = document.getElementById('nav');
-const indicador = document.getElementById('indicador');
+
+//URL y barra moviminto con scroll 
 const secciones = document.querySelectorAll('.seccion');
+const enlaces = document.querySelectorAll('#links a');
 
-let tamañoIndicador = menu.querySelector('a').offsetWidth;
-indicador.style.width = tamañoIndicador + 'px';
-
-
-let indexSeccionActiva;
-
-// Observer
-const observer = new IntersectionObserver((entradas, observer) => {
-	entradas.forEach(entrada => {
-		if(entrada.isIntersecting){
-			// Obtenemos cual es la seccion que esta entrando en pantalla.
-			// console.log(`La entrada ${entrada.target.id} esta intersectando`);
-
-			// Creamos un arreglo con las secciones y luego obtenemos el index del la seccion que esta en pantalla.
-			indexSeccionActiva = [...secciones].indexOf(entrada.target);
-			indicador.style.transform = `translateX(${tamañoIndicador * indexSeccionActiva}px)`;
-		}
-	});
+const observer = new IntersectionObserver((entradas) => {
+  entradas.forEach(entrada => {
+    if(entrada.isIntersecting){
+      const id = '#' + entrada.target.id;
+      history.pushState({}, '' , id);
+      //console.log(entrada.target.id)
+      enlaces.forEach(enlace => {
+        enlace.classList.remove('seleccionado');
+        const href = enlace.attributes.href.nodeValue;
+        if(href === id){
+          enlace.classList.add('seleccionado');
+        }
+      });
+    }
+  });
 }, {
 	rootMargin: '-45px 0px 0px 0px',
-	threshold: 0.2
+	threshold: 0.5
+});
+
+secciones.forEach(seccion => {
+  observer.observe(seccion);
 });
 
 
 
-// Asignamos un observador a cada una de las secciones
-secciones.forEach(seccion => observer.observe(seccion));
 
-// Evento para cuando la pantalla cambie de tamaño.
-const onResize = () => {
-	// Calculamos el nuevo tamaño que deberia tener el indicador.
-	tamañoIndicador = menu.querySelector('a').offsetWidth;
-
-	// Cambiamos el tamaño del indicador.
-	indicador.style.width = `${tamañoIndicador}px`;
-
-	// Volvemos a posicionar el indicador.
-	indicador.style.transform = `translateX(${tamañoIndicador * indexSeccionActiva}px)`;
-}
-
-window.addEventListener('resize', onResize);
-*/
 
 //Boton que sube 
 window.onscroll = function(){
@@ -97,5 +80,4 @@ window.onscroll = function(){
     });
   });
 
-  
   

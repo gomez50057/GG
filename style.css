@@ -70,7 +70,7 @@
             transition: .5s;
         }
         
-        #inicio .contenido header .contenido-header nav ul li a:hover {
+        #inicio .contenido header .contenido-header nav ul li a:hover  {
             color: #E7BD70;
         }
         
@@ -86,9 +86,11 @@
             color: #E7bd70;
         }
         
-        #inicio .contenido header .contenido-header .seleccionado {
-            color: #E7BD70;
+        #inicio .contenido header .contenido-header a.seleccionado {
+            color: #EF959D;
         }
+
+        
         
         #inicio .contenido .presentacion {
             max-width: 1100px;
