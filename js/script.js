@@ -30,6 +30,8 @@ function seleccionar() {
 }
 
 //URL y barra movimiento con scroll 
+
+
 const secciones = document.querySelectorAll('.seccion');
 const enlaces = document.querySelectorAll('#links a');
 
@@ -56,9 +58,6 @@ const observer = new IntersectionObserver((entradas) => {
 secciones.forEach(seccion => {
   observer.observe(seccion);
 });
-
-
-
 
 
 //Boton que sube 

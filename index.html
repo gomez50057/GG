@@ -267,10 +267,13 @@
     
     <!-- SECCION B A N N E R -->
     <div class="contenedor-baner">
-      <div class="titulo-seccion">
+      <!-- <div class="titulo-seccion">
         <h2>tecnología</h2>
-      </div>        
+      </div>         -->
+      <div class="texto"></div>
     </div>
+
+    
 
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio" class="seccion portfolio">
@@ -453,8 +456,26 @@
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/scramble.js"></script>
+
       <script>
         new WOW().init();
+      </script>
+
+      <script>
+        const phrases = ['Hola ヽ(•‿•)ノ ,', '¿Necesitas ayuda', 'con algún proyecto?', '¡Recurda!', 'lo que no se mide', 'no se puede', 'mejorar ᕙ( ͡ᵔ ͜ʖ ͡ᵔ)ᕗ'];
+        const el = document.querySelector('.texto');
+        const fx = new TextScramble(el);
+        let counter = 0;
+        
+        const next = () => {
+          fx.setText(phrases[counter]).then(() => {
+            setTimeout(next, 900);
+          });
+          counter = (counter + 1) % phrases.length;
+        };
+        
+        next();
       </script>
 
 </body>

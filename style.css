@@ -537,6 +537,16 @@
             text-align: center;
             height: 20vh;
         }    
+
+        .texto {
+            font-weight: 100;
+            font-size: 28px;
+            color: #fafafa;
+        }
+
+        .dud {
+            color: #E7BD70;
+        }
        
         /* *********************/
         /* seccion P O R T F O L I O */
