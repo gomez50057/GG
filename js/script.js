@@ -50,7 +50,7 @@ const observer = new IntersectionObserver((entradas) => {
   });
 }, {
 	rootMargin: '-45px 0px 0px 0px',
-	threshold: 0.5
+	threshold: 0.3
 });
 
 secciones.forEach(seccion => {
