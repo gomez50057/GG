@@ -29,7 +29,7 @@ function seleccionar() {
     }
 }
 
-//URL y barra moviminto con scroll 
+//URL y barra movimiento con scroll 
 const secciones = document.querySelectorAll('.seccion');
 const enlaces = document.querySelectorAll('#links a');
 
