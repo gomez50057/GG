@@ -84,11 +84,10 @@
         
         #inicio .contenido header .contenido-header .redes a:hover {
             color: #E7bd70;
-            transition: 1s;
         }
         
         #inicio .contenido header .contenido-header a.seleccionado {
-            color: #EF959D;
+            color: #E7bd70;
             transition: 1.5s;
         }
 
