@@ -332,7 +332,8 @@
         /* *********************/
         
         #servicios {
-            /*position: relative; background-image: linear-gradient(135deg, #EF959D 45%, #E7BD70 100%);*/
+            /*position: relative; background-image: linear-gradient(135deg, #EF959D 45%, #E7BD70 100%);
+            border-top: 1px solid rgba(255, 255, 255, 20);*/
             
             background: linear-gradient( rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.856) ), url("img/G.svg");
             background-size: cover;
@@ -370,7 +371,7 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-right-color: rgba(255, 255, 255, 0.1);
             border-bottom-color: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
             overflow: hidden;
         }
 
@@ -431,8 +432,7 @@
             line-height: 22px;
            /*color: #343434;*/
         }
-
-        
+       
 
         /* *********************/
         /* seccion H E R R A M I E N T A S */
