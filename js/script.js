@@ -92,8 +92,8 @@ function tamano() {
   }
   else{
     VanillaTilt.init(document.querySelectorAll("#servicios .fila .servicio"), {
-      max: 5,
-      speed: 500,
+      max: 3,
+      speed: 50,
       glare: true,
       "max-glare": 1,
     });
