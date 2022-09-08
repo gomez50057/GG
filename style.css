@@ -27,9 +27,7 @@
             height: 100vh;
         }
 
-        
-        
-        .logo img {
+        .logo{
             max-height: 45px;
             width: auto;
         }
