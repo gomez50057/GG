@@ -62,7 +62,7 @@ secciones.forEach(seccion => {
 
 //Boton que sube 
 window.onscroll = function(){
-    //console.log(document.documentElement.scrollTop);
+    console.log(document.documentElement.scrollTop);
     if(document.documentElement.scrollTop > 100) {
       document.querySelector('.go-top-container').classList.add('show');
        

@@ -332,12 +332,15 @@
         /* *********************/
         
         #servicios {
-            padding: 100px 15px;
-            background: linear-gradient( rgba(0, 0, 0, 0.856), rgba(231, 189, 112, 0.3)), url("img/G.svg");
+            /*position: relative; background-image: linear-gradient(135deg, #EF959D 45%, #E7BD70 100%);*/
+            
+            background: linear-gradient( rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.856) ), url("img/G.svg");
             background-size: cover;
             background-position: center center;
+            
+            padding: 100px 15px;
             text-align: center;
-            color: #F9F8F0;
+            color: #F9F8F0;            
         }
         
         #servicios .titulo-seccion {
@@ -356,13 +359,36 @@
         
         #servicios .fila .servicio {
             max-width: 350px;
-            background-color: rgba(0, 0, 0, 0.1)  ;
+            /*background-color: rgba(0, 0, 0, 0.1)  ;*/
+            background-color: rgba(255, 255, 255, 0.05);
             padding: 30px;
             margin: 0 5px;
             border-radius: 30px;
             transition: .5s;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-right-color: rgba(255, 255, 255, 0.1);
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        #servicios .fila .servicio:before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 50%;
+            height: 105%;
+            margin-top: -10%;
+            background: rgba(255, 255, 255, 0.5);
+            filter: blur(0px);
+            transition: 410ms;
+            transform: skewX(45deg) translateX(calc(350px + 70%));
+        }
+
+        #servicios .fila .servicio:hover:before {
+            transform: skewX(45deg) translateX(calc(350px * -1 - 50%));
         }
         
         #servicios .fila .servicio:hover {
@@ -818,7 +844,7 @@
             background-color: black;
             color: #F9F8F0;
             text-align: center;
-            padding: 30px 0;
+            padding: 20px 0;
         }
         
         footer a {
@@ -830,17 +856,18 @@
         }
 
         .social-links a {
-            font-size: 18px;
+            font-size: 15px;
             display: inline-block;
             background: #28251f;
             color: #F9F8F0;
             line-height: 1;
             padding: 8px 0;
+            margin-top: 15px;
             margin-right: 4px;
             border-radius: 50%;
             text-align: center;
-            width: 36px;
-            height: 36px;
+            width: 30px;
+            height: 30px;
             transition: 0.3s;
         }
           
@@ -850,6 +877,14 @@
             text-decoration: none;
         }
         
+        @media (max-width: 420px) {
+            footer {
+                padding: 15px 0;
+            }
+            footer p {
+                font-size: 12px;
+            }
+        }
 
 
         /* *********************/
