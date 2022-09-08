@@ -78,4 +78,24 @@ window.onscroll = function(){
     });
   });
 
-  
+
+//Tamaño pantalla
+function tamano() {
+  //console.log(document.documentElement.clientWidth);
+  if(document.documentElement.clientWidth > 500) {
+    VanillaTilt.init(document.querySelectorAll("#servicios .fila .servicio"), {
+      max: 15,
+      speed: 200,
+      glare: true,
+      "max-glare": 1,
+    });
+  }
+  else{
+    VanillaTilt.init(document.querySelectorAll("#servicios .fila .servicio"), {
+      max: 5,
+      speed: 500,
+      glare: true,
+      "max-glare": 1,
+    });
+  }
+}
