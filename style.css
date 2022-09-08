@@ -622,7 +622,6 @@
             position: relative;
             overflow: hidden;
             border-radius: 10px;
-
         }
           
         .portfolio .member .member-info {
@@ -815,27 +814,6 @@
             opacity: 1;
         }
 
-        @media (max-width: 990px) {
-            .icons a .layer span.fab{
-                padding-top: 0;
-            }
-        }
-        
-        @media (max-width: 760px) {
-            .icons a .text{
-                bottom: -5px;
-                opacity: 1;
-            }
-        }
-        
-        @media (max-width: 670px) {
-            .icons a{
-                margin: 2rem 2rem;
-            }
-            
-        }
-
-
         /* *********************/
         /* seccion F O O T E R */
         /* *********************/
@@ -877,15 +855,6 @@
             text-decoration: none;
         }
         
-        @media (max-width: 420px) {
-            footer {
-                padding: 15px 0;
-            }
-            footer p {
-                font-size: 12px;
-            }
-        }
-
 
         /* *********************/
         /* seccion B O T Ó N   A R R I B A */
@@ -1040,7 +1009,42 @@
             #contacto   {
                 width: 100%;
             }
+        }
 
+        @media (max-width: 990px) {
+            .icons a .layer span.fab{
+                padding-top: 0;
+            }
+        }
+        
+        @media (max-width: 770px) {
+            .icons a .text{
+                bottom: -5px;
+                opacity: 1;
+            }
+            #servicios .fila .servicio:before {
+                transition: 430ms;
+            }
+        }
 
+        @media (max-width: 420px) {
+            footer {
+                padding: 15px 0;
+            }
+            footer p {
+                font-size: 12px;
+            }
+            #servicios .fila .servicio:before {
+                transition: 450ms;
+            }
+        }
+        
+        @media (max-width: 670px) {
+            .icons a{
+                margin: 2rem 2rem;
+            }
+            #servicios .fila .servicio:before {
+                transition: 470ms;
+            }
         }
 
