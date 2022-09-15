@@ -43,7 +43,10 @@
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
-                    
+                    <button class="switch" id="switch">
+                      <span><i class="fas fa-moon"></i></span>
+                      <span><i class="fas fa-sun"></i></span>
+                    </button>
                     <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
@@ -55,12 +58,12 @@
                 </div>
             </header>
             <div class="presentacion"> 
-                <p class="bienvenida">Bienvenidos</p>
-                <h1><h2>Soy <span>Gabriel Gómez G ,</span> <span1 class="typed"></span1></h2>
-                <div class="presentacion" id="cadenas-texto">
-                    <h2>Frontend Developer</h2>   
-                    <h2>Ingeniero en Sistemas y Tecnologías Industriales</h2></h1>
-                </div>
+              <p class="bienvenida">Bienvenidos</p>
+              <h2>Soy <span>Gabriel Gómez G ,</span> <span1 class="typed"></span1></h2>
+              <div class="presentacion" id="cadenas-texto">
+                <h1><h2>Frontend Developer</h2>   
+                  <h2>Ingeniero en Sistemas y Tecnologías Industriales</h2></h1>
+              </div>
                 <p class="descripcion wow animate__animated animate__rubberBand">Desarrollo de plataformas web - Planes logística así como de calidad</p>
                 <a href="#portfolio">Ir a Portafolio</a>
                 
@@ -216,7 +219,7 @@
       <a class="box wow animate__animated animate__bounceInRight">
         <p id="tooltiptxt">C</p>
         <svg xmlns="http://www.w3.org/2000/svg" class="box__image" width="100" height="100" viewBox="0 0 15 15" fill="none" >
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 0.421143L14 4.21281V10.7872L7.5 14.5788L1 10.7872V4.21281L7.5 0.421143ZM7.5 4C5.567 4 4 5.567 4 7.5C4 9.433 5.567 11 7.5 11H7.68198C8.6585 11 9.59503 10.6121 10.2855 9.92157L10.3536 9.85355L9.64645 9.14645L9.57843 9.21447C9.07546 9.71744 8.39329 10 7.68198 10H7.5C6.11929 10 5 8.88071 5 7.5C5 6.11929 6.11929 5 7.5 5H7.68198C8.39329 5 9.07546 5.28257 9.57843 5.78553L9.64645 5.85355L10.3536 5.14645L10.2855 5.07843C9.59503 4.38792 8.6585 4 7.68198 4H7.5Z" fill="black"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 0.421143L14 4.21281V10.7872L7.5 14.5788L1 10.7872V4.21281L7.5 0.421143ZM7.5 4C5.567 4 4 5.567 4 7.5C4 9.433 5.567 11 7.5 11H7.68198C8.6585 11 9.59503 10.6121 10.2855 9.92157L10.3536 9.85355L9.64645 9.14645L9.57843 9.21447C9.07546 9.71744 8.39329 10 7.68198 10H7.5C6.11929 10 5 8.88071 5 7.5C5 6.11929 6.11929 5 7.5 5H7.68198C8.39329 5 9.07546 5.28257 9.57843 5.78553L9.64645 5.85355L10.3536 5.14645L10.2855 5.07843C9.59503 4.38792 8.6585 4 7.68198 4H7.5Z" />
         </svg>
       </a>
       <a class="box wow animate__animated animate__bounceInRight">
@@ -273,14 +276,9 @@
     
     <!-- SECCION B A N N E R -->
     <div class="contenedor-baner">
-      <!-- <div class="titulo-seccion">
-        <h2>tecnología</h2>
-      </div>         -->
       <div class="texto"></div>
     </div>
-
     
-
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio" class="seccion portfolio">
       <div class="titulo-seccion">
@@ -460,7 +458,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/scramble.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script>
