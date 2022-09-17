@@ -120,9 +120,9 @@ function tamano() {
 
 //moon y sun
 const btnSwitch = document.querySelector("#switch")
-btnSwitch.addEventListener("click",() =>{
+btnSwitch.addEventListener('click',() =>{
   document.body.classList.toggle("dark");
-  btnSwitch.classList.toggle("switch");
+  btnSwitch.classList.toggle("active");
 });
 
 

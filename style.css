@@ -36,6 +36,7 @@
         .logo{
             max-height: 45px;
             width: auto;
+            fill: #fff;         
         }
 
         #inicio .contenido header {
@@ -68,7 +69,7 @@
         
         #inicio .contenido header .contenido-header nav ul li a {
             text-decoration: none;
-            color: #F9F8F0;
+            color: #f9f0f0;
             margin: 0 12px;
             font-weight: 400;
             transition: .5s;
@@ -88,6 +89,7 @@
         
         #inicio .contenido header .contenido-header .redes a:hover {
             color: #E7bd70;
+            transition: .5s;
         }
         
         #inicio .contenido header .contenido-header a.seleccionado {
@@ -212,11 +214,11 @@
             box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
         }
 
-        .switch:active{
+        .switch.active{
             background: #EF959D;
         }
 
-        .switch:active::after{
+        .switch.active::after{
             left: unset;
             right: 0;
         }
@@ -229,9 +231,6 @@
             background: none;
             color: #000;
         }
-        
-
-
         
         /* *********************/
         /* seccion S O B R E  M I */
@@ -557,6 +556,8 @@
             z-index: 2;
         }
 
+        
+
          /* *********************/
          #tooltiptxt {
             position: absolute;
@@ -644,7 +645,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         #portfolio .fila .proyecto img {
             width: 100%;
             height: 100%;
@@ -1091,6 +1092,8 @@
         /* seccion D A R K*/
         /* *********************/
 
+        
+
         body.dark #sobremi {
             color: #1B1A17;
         }
@@ -1108,7 +1111,42 @@
         }
 
         body.dark .titulo-seccion h2::after {
-            background: #aaaaaa;
-            
+            background: #aaaaaa;            
+        }
+
+        body.dark #contacto {
+            background-color: #f1efe5;
+        }
+
+        body.dark footer {
+            background-color: #e9e7df;
+            color: #1B1A17;
+        }
+
+        body.dark #inicio .contenido header {
+            background-color: rgba(199, 196, 189, 0.9);
         }
         
+        body.dark #inicio .contenido header .contenido-header nav ul li a {
+            color: #1B1A17;            
+        }
+        
+        body.dark #inicio .contenido header .contenido-header a.seleccionado {
+            color: #EF959D;
+        }
+
+        body.dark #inicio .contenido header .contenido-header .redes a {
+            color: #1B1A17;
+        }
+
+        body.dark #inicio .contenido header .contenido-header .redes a:hover {
+            color: #EF959D;
+        }
+        
+        body.dark .box__image {
+            fill: #FCFAF1;
+        }
+
+        body.dark .logo{
+            fill: #1B1A17;         
+        }
