@@ -254,7 +254,6 @@
         
         #sobremi .contenedor-foto img {
             width: 100%;
-            background-color: #343434;
             border-radius: 10%;
         }
         
@@ -1064,6 +1063,10 @@
 
         body.dark .titulo-seccion h2::after {
             background: #aaaaaa;            
+        }
+
+        body.dark #portfolio .fila .proyecto img {
+            filter: grayscale(0.3);
         }
 
         body.dark #contacto {
