@@ -187,6 +187,7 @@
         #icono-nav {
             color: #F9F8F0;
             display: none;
+            transition: 2s;
         }
 
         .switch{
