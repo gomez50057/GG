@@ -304,66 +304,6 @@
             background-color: #E7BD70;
             color: #F9F8F0;
         }
-
-        .carreaux_presentation_light {
-            display: table-cell;
-            
-            background-size: cover;
-            overflow: hidden;
-            position: relative;
-        }
-        .carreaux_presentation_light .shadow_swhow_mini {
-            background-color: rgba(19, 30, 33, 0.4);
-            position: absolute;
-            z-index: 1000;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-        .carreaux_presentation_light:hover .shadow_swhow_mini {
-            background-color: rgba(16, 23, 41, 0);
-        }
-        .carreaux_presentation_light .deroul_titre {
-            position: absolute;
-            text-transform: uppercase;
-            padding: 7px;
-            z-index: 1000;
-            top: 60%;
-            left: -80%;
-            color: #F9F8F0;
-            font-weight: 300;
-            font-size: 13px;
-            width: 80%;
-            -webkit-transition: all 0.7s;
-            -moz-transition: all 0.7s;
-            -ms-transition: all 0.7s;
-            transition: all 0.7s;
-        }
-        .carreaux_presentation_light:hover .deroul_titre {
-            background-color: #E7BD70;
-            left: 0px;
-        }
-        .carreaux_presentation_light .deroul_soustitre {
-            position: absolute;
-            padding: 5px;
-            z-index: 1000;
-            top: 60%;
-            right: -85%;
-            margin-top: 25px;
-            color: #F9F8F0;
-            font-weight: 300;
-            font-size: 11px;
-            width: 80%;
-            -webkit-transition: all 0.7s;
-            -moz-transition: all 0.7s;
-            -ms-transition: all 0.7s;
-            transition: all 0.7s;
-        }
-        .carreaux_presentation_light:hover .deroul_soustitre {
-            background-color: #E7BD70;
-            right: 0px;
-        }
   
 
         /* *********************/
@@ -868,11 +808,11 @@
         
         footer a {
             text-decoration: none;
-            color: #F9F8F0;
             display: inline-block;
             margin: 5px;
             font-size: 26px;
         }
+        
 
         .social-links a {
             font-size: 15px;
@@ -994,8 +934,10 @@
             nav.responsive ul li {
                 margin: 5px 0;
             }
+            
             #icono-nav {
                 display: block;
+                margin-left: 75%;
             }
             #inicio .contenido .presentacion h2 {
                 font-size: 40px;
@@ -1059,6 +1001,9 @@
         }
         
         @media (max-width: 770px) {
+            #icono-nav {
+                margin-left: 75%;
+            }
             .icons a .text{
                 bottom: -5px;
                 opacity: 1;
@@ -1067,8 +1012,23 @@
                 transition: 430ms;
             }
         }
+        
+        @media (max-width: 670px) {
+            #icono-nav {
+                margin-left: 65%;
+            }
+            .icons a{
+                margin: 2rem 2rem;
+            }
+            #servicios .fila .servicio:before {
+                transition: 470ms;
+            }
+        }
 
         @media (max-width: 420px) {
+            #icono-nav {
+                margin-left: 50%;
+            }
             footer {
                 padding: 15px 0;
             }
@@ -1077,15 +1037,6 @@
             }
             #servicios .fila .servicio:before {
                 transition: 450ms;
-            }
-        }
-        
-        @media (max-width: 670px) {
-            .icons a{
-                margin: 2rem 2rem;
-            }
-            #servicios .fila .servicio:before {
-                transition: 470ms;
             }
         }
         /* *********************/
@@ -1150,3 +1101,16 @@
         body.dark .logo{
             fill: #1B1A17;         
         }
+
+        body.dark #sobremi .sobremi h2 span {
+            color: #EF959D;
+        }
+
+        body.dark #sobremi .sobremi a {
+            border: 1px solid #EF959D;                   
+        }
+        
+        body.dark #sobremi .sobremi a:hover {
+            background-color: #EF959D;
+        }
+  
