@@ -676,7 +676,27 @@
         bottom: 0;
         transition: bottom ease-in-out 0.4s;
         }
-
+        
+        .portafolio-completo{
+            display: flex;
+            justify-content: center;
+        }
+        .portafolio-completo  a {
+            display: inline-block;
+            text-decoration: none;
+            color: #F9F8F0;
+            border-radius: 30px;
+            border: 1px solid #E7BD70;
+            padding: 10px 20px;
+            margin-top: 30px;
+            transition: .5S ease all;  
+            z-index: 9;        
+        }
+        
+        .portafolio-completo  a:hover {
+            background-color: #E7BD70;
+            color: #F9F8F0;
+        }
 
         /* *********************/
         /* seccion C O N T A C T O */
@@ -1069,10 +1089,9 @@
             filter: grayscale(0.3);
         }
 
-        body.dark #contacto {
+        body.dark #contacto{
             background-color: #f1efe5;
         }
-
         body.dark footer {
             background-color: #e9e7df;
             color: #1B1A17;
@@ -1110,11 +1129,13 @@
             color: #EF959D;
         }
 
-        body.dark #sobremi .sobremi a {
-            border: 1px solid #EF959D;                   
+        body.dark #sobremi .sobremi a, body.dark .portafolio-completo a{
+            border: 1px solid #EF959D;   
+            color: #1B1A17;                
         }
         
-        body.dark #sobremi .sobremi a:hover {
+        body.dark #sobremi .sobremi a:hover,body.dark .portafolio-completo a:hover{
             background-color: #EF959D;
         }
   
+       
