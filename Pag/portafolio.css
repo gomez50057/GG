@@ -424,26 +424,28 @@ div.rosa {
 
 
 .grid {
-    position: relative;
-    opacity: 0;
-    transition: opacity 0.8s linear 1s;
-    margin-left: calc(5% - 5px);
-    margin-bottom: 50px;
+	position: relative;
+	opacity: 0;
+	transition: opacity 0.8s linear 1s;
+	margin-left: calc(5% - 5px);
+	margin-bottom: 50px;
 }
 
 .images-loaded .grid {
-    opacity: 1;
+	opacity: 1;
 }
 
 .item {
-    position: absolute;
-    margin: 5px;
-    cursor: pointer;
-    z-index: 1;
+	position: absolute;
+	margin: 5px;
+	cursor: pointer;
+	z-index: 1;
 }
 
 .grid .item img {
-    border-radius: 15px;
+	/* width:100%;
+	height:100%; */
+	border-radius: 15px;
 	filter: grayscale(1);
 	transition: .5s;
 }
@@ -455,7 +457,7 @@ div.rosa {
 
 
 .text-conteiner {
-    border-radius: 15px;
+	border-radius: 15px;
 	height: 100%;
 	width: 100%;
 	font-size: 15px;
@@ -465,6 +467,7 @@ div.rosa {
 	left: 0;
 	opacity: 0;
 }
+
 .text-conteiner:hover {
 	border-radius: 15px;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
@@ -474,18 +477,19 @@ div.rosa {
 }
 
 .text h2:first-child {
-    height: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	height: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
+
 .text :nth-child(2) {
-    height: 20%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	height: 20%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 
@@ -508,6 +512,7 @@ div.rosa {
 	margin-left: 5px;
 	margin-right: 5px;
 }
+
 .social a:hover {
 	color: #E7BD70;
 }
@@ -555,15 +560,42 @@ div.rosa {
 	transition: 0.5s;
 }
 
-
 #contacto .titulo-seccion {
 	text-align: center;
 	font-size: 22px;
 	text-transform: uppercase;
 	color: #F9F8F0;
 	transition: 0.5s;
-
 }
+
+.titulo-seccion h2 {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 0;
+	line-height: 1px;
+	margin: 0 0 5px 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #aaaaaa;
+}
+
+.titulo-seccion h2::after {
+	content: "";
+	width: 120px;
+	height: 1px;
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 4px 10px;
+}
+
+.titulo-seccion p {
+	margin: 0;
+	margin: 0;
+	font-size: 36px;
+	font-weight: 700;
+	color: #E7BD70;
+}
+
 
 .cen-sm {
 	text-align: center;
@@ -731,11 +763,20 @@ body.dark #contacto {
 	background-color: #f1efe5;
 }
 
-body.dark footer{
+body.dark .titulo-seccion h2::after {
+	background: #aaaaaa;
+}
+
+
+body.dark footer {
 	background-color: #e9e7df;
 	color: #1B1A17;
 }
 
 body.dark #contacto .titulo-seccion {
-color: #E7BD70;
+	color: #E7BD70;
+}
+
+body.dark .grid .item img {
+	filter: grayscale(0.3);
 }
